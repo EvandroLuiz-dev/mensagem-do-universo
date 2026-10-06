@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: #21102f;
+    overscroll-behavior-y: none;
+}
+
+body {
+    position: relative;
+    min-height: 100dvh;
+
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+
+    overflow-x: hidden;
+
+    background: #21102f;
+
+    overscroll-behavior-y: none;
+}
+
+
+/* =========================
+   FUNDO
+========================= */
+
+body::before {
+    content: "";
+
+    position: fixed;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-image: var(--background-signo, url("assets/backgrounds/aries.png"));
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+
+    z-index: 0;
+
+    pointer-events: none;
+}
+
+
+/* CONTEÚDO */
+
+header,
+main,
+footer {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+header {
+    text-align: center;
+    padding: 12px 20px 4px;
+}
+
+header h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 38px;
+    font-weight: 400;
+
+    color: #ffffff;
+
+    text-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.85);
+}
+
+
+/* =========================
+   CONTEÚDO
+========================= */
+
+main {
+    width: 100%;
+}
+
+
+/* =========================
+   MENSAGEM
+========================= */
+
+.mensagem {
+    width: calc(100% - 40px);
+    max-width: 360px;
+
+    margin: 32px auto 0;
+    padding: 20px;
+
+    background: rgba(30, 15, 50, 0.18);
+
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    border-radius: 18px;
+
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+
+    text-align: center;
+}
+
+.mensagem h2 {
+    margin-bottom: 10px;
+
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 25px;
+    font-weight: 400;
+
+    color: #ffffff;
+
+    text-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.85);
+}
+
+.mensagem p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+
+    color: rgba(255, 255, 255, 0.9);
+
+    text-shadow:
+        0 2px 7px rgba(0, 0, 0, 0.8);
+}
+
+
+/* =========================
+   YOGA
+========================= */
+
+.yoga {
+    width: calc(100% - 40px);
+    max-width: 360px;
+    margin: 12px auto 0;
+    display: flex;
+    justify-content: center;
+}
+
+.yoga img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer {
+    position: fixed;
+
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+
+    padding: 10px 20px 16px;
+
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+
+    z-index: 10;
+}
+
+footer a {
+    flex: 1;
+    max-width: 110px;
+
+    padding: 10px 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+
+    color: #ffffff;
+    text-decoration: none;
+
+    background: rgba(30, 15, 50, 0.35);
+
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    border-radius: 12px;
+
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+
+    text-shadow:
+        0 2px 7px rgba(0, 0, 0, 0.8);
+
+    transition:
+        background 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+footer a:hover {
+    background: rgba(160, 160, 180, 0.12);
+
+    border-color: #e6e6e6;
+
+    box-shadow:
+        0 0 10px rgba(255, 255, 255, 0.45),
+        0 0 20px rgba(220, 220, 230, 0.2);
+}
+
+.voltar {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.titulo-signo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.titulo-signo img {
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
+    filter:
+        brightness(0) invert(1)
+        drop-shadow(0 0 4px rgba(255,255,255,0.7));
+}
+
+.titulo-signo h1 {
+    margin: 0;
+}

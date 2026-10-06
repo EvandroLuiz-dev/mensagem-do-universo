@@ -1,0 +1,3 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <path d="M51 -66V-40Q91 -24 130.0 -12.5Q169 -1 209 7V692Q126 708 51 739V765Q213 699 425 699Q637 699 799 765V739Q724 708 641 692V7Q681 -1 720.0 -12.5Q759 -24 799 -40V-66Q707 -31 616.5 -15.5Q526 0 425 0Q324 0 233.5 -15.5Q143 -31 51 -66ZM235 12Q281 20 328.0 23.0Q375 26 425 26Q475 26 522.0 23.0Q569 20 614 12V688Q526 673 425 673Q325 673 235 688Z" fill="currentColor" transform="translate(11.131167 81.963899) scale(0.091456 -0.091456)" stroke="currentColor" stroke-width="24" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke fill"/>
+</svg>

@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: #21102f;
+    overscroll-behavior-y: none;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    min-height: 100dvh;
+
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+
+    overflow-x: hidden;
+
+    background: #21102f;
+
+    overscroll-behavior-y: none;
+}
+
+
+/* =========================
+   FUNDO
+========================= */
+
+body::before {
+    content: "";
+
+    position: fixed;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-image: url("assets/backgrounds/background1.png");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+
+    z-index: 0;
+
+    pointer-events: none;
+}
+
+
+/* CONTEÚDO ACIMA DO FUNDO */
+
+header,
+main {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+.cabecalho {
+    text-align: center;
+    padding: 10px 20px 20px;
+}
+
+.subtitulo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 21px;
+    font-weight: 400;
+    margin-bottom: 5px;
+
+    color: #ffffff;
+
+    text-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.85);
+}
+
+.cabecalho h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.1;
+
+    color: #ffffff;
+
+    white-space: nowrap;
+
+    text-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.85);
+}
+
+.cabecalho::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: 220px;
+
+    background: linear-gradient(
+        to bottom,
+        rgba(20, 8, 35, 0.20),
+        rgba(20, 8, 35, 0)
+    );
+
+    z-index: -1;
+    pointer-events: none;
+}
+
+.descricao {
+    max-width: 320px;
+
+    margin: 10px auto 0;
+
+    font-size: 13px;
+    line-height: 1.6;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.85);
+
+    text-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.85);
+}
+
+
+/* =========================
+   SELEÇÃO DOS SIGNOS
+========================= */
+
+.selecao-signos {
+    width: 100%;
+    max-width: 420px;
+
+    padding: 0 18px 40px;
+
+    margin: 0 auto;
+}
+
+.selecao-signos h2 {
+    margin-bottom: 14px;
+
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    font-weight: 400;
+
+    text-align: center;
+
+    color: #ffffff;
+
+    text-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.85);
+}
+
+
+/* =========================
+   GRID
+========================= */
+
+.lista-signos {
+    list-style: none;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 10px;
+}
+
+
+/* =========================
+   BOTÕES
+========================= */
+
+.signo {
+    position: relative;
+
+    width: 100%;
+    min-height: 88px;
+
+    padding: 10px 8px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 6px;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+
+    color: #ffffff;
+
+    /* GLASS SUTIL */
+    background: rgba(30, 15, 50, 0.12);
+
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    border-radius: 16px;
+
+    cursor: pointer;
+
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+/* =========================
+   ÍCONE
+========================= */
+
+.icone-signo {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    border-radius: 50%;
+}
+
+.icone-signo::before {
+    content: "";
+
+    width: 24px;
+    height: 24px;
+
+    background-color: #d6d1da;
+
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+
+    filter:
+        drop-shadow(0 0 3px rgba(255, 255, 255, 0.8))
+        drop-shadow(0 0 8px rgba(190, 140, 255, 0.7));
+}
+
+
+/* =========================
+   ÍCONES DOS SIGNOS
+========================= */
+
+.signo-capricornio .icone-signo::before {
+    mask-image: url("assets/icons/capricorn.svg");
+}
+
+.signo-aquario .icone-signo::before {
+    mask-image: url("assets/icons/aquarius.svg");
+}
+
+.signo-peixes .icone-signo::before {
+    mask-image: url("assets/icons/pisces.svg");
+}
+
+.signo-aries .icone-signo::before {
+    mask-image: url("assets/icons/aries.svg");
+}
+
+.signo-touro .icone-signo::before {
+    mask-image: url("assets/icons/taurus.svg");
+}
+
+.signo-gemeos .icone-signo::before {
+    mask-image: url("assets/icons/gemini.svg");
+}
+
+.signo-cancer .icone-signo::before {
+    mask-image: url("assets/icons/cancer.svg");
+}
+
+.signo-leao .icone-signo::before {
+    mask-image: url("assets/icons/leo.svg");
+}
+
+.signo-virgem .icone-signo::before {
+    mask-image: url("assets/icons/virgo.svg");
+}
+
+.signo-libra .icone-signo::before {
+    mask-image: url("assets/icons/libra.svg");
+}
+
+.signo-escorpiao .icone-signo::before {
+    mask-image: url("assets/icons/scorpio.svg");
+}
+
+.signo-sagitario .icone-signo::before {
+    mask-image: url("assets/icons/sagittarius.svg");
+}
+
+
+/* =========================
+   HOVER
+========================= */
+
+.signo:hover {
+    background: rgba(160, 160, 180, 0.12);
+
+    border-color: #e6e6e6;
+
+    box-shadow:
+        0 0 10px rgba(255, 255, 255, 0.55),
+        0 0 22px rgba(220, 220, 230, 0.35),
+        0 0 32px rgba(190, 180, 220, 0.15);
+}

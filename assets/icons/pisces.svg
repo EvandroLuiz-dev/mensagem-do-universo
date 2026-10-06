@@ -1,0 +1,3 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <path d="M109 0Q177 86 212.5 171.0Q248 256 250 360H51V386H250Q248 492 212.5 578.5Q177 665 109 752H138Q205 671 241.5 583.0Q278 495 280 386H535Q537 495 573.5 583.0Q610 671 677 752H706Q638 665 602.5 578.5Q567 492 565 386H764V360H565Q567 256 603.0 171.0Q639 86 706 0H677Q610 81 573.5 166.0Q537 251 535 360H280Q279 251 242.0 166.0Q205 81 138 0Z" fill="currentColor" transform="translate(8.816489 88.000000) scale(0.101064 -0.101064)" stroke="currentColor" stroke-width="24" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke fill"/>
+</svg>
