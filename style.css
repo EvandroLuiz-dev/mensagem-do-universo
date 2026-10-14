@@ -349,3 +349,264 @@ main {
 
     transform: translateY(-2px);
 }
+
+
+
+/* =========================
+   TELA SEGUIR A AION
+========================= */
+
+.pagina-seguir {
+    background: #21102f;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.pagina-seguir {
+    background-image: url("assets/backgrounds/backgroundSeguir.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #21102f;
+}
+
+.pagina-seguir main {
+    transform: none;
+}
+
+.tela-seguir {
+    width: 100%;
+    min-height: calc(100vh - 90px);
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 20px;
+}
+
+.card-mensagem {
+    position: relative;
+
+    width: 100%;
+    max-width: 360px;
+
+    min-height: 520px;
+
+    padding: 30px 24px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background-image: url("assets/backgrounds/backgroundCard.png");
+    background-size: cover;
+    background-position: center;
+
+    border-radius: 28px;
+
+    /* border: 1px solid rgba(212, 175, 55, 0.65); */
+
+    box-shadow: none;
+
+    /* overflow: hidden; */
+}
+
+.ilustracao-mensagem {
+    width: 115px;
+    height: 115px;
+
+    object-fit: contain;
+
+    display: block;
+
+    margin-bottom: 12px;
+}
+
+.card-mensagem h1 {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 34px;
+    line-height: 1.05;
+    font-weight: 500;
+
+    color: #5B3450;
+
+    margin-bottom: 14px;
+}
+
+.card-mensagem .divisor {
+    width: 100%;
+    margin: 4px auto 18px;
+}
+
+.card-mensagem .linha {
+    width: 65px;
+    background: rgba(91, 52, 80, 0.45);
+}
+
+.card-mensagem .lua-divisor {
+    color: #5B3450;
+}
+
+.card-mensagem p {
+    max-width: 270px;
+
+    margin-bottom: 24px;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    line-height: 1.7;
+    letter-spacing: 0.5px;
+
+    color: #5B3450;
+}
+
+.botao-seguir {
+    width: 100%;
+    max-width: 250px;
+    min-height: 42px;
+
+    padding: 0 14px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+
+    border: none;
+    border-radius: 30px;
+
+    background: #5B3450;
+    color: #F3D39A;
+
+    text-decoration: none;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 9px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
+
+.botao-seguir span {
+    flex: none;
+}
+
+.botao-seguir i {
+    font-size: 16px;
+}
+
+.botao-seguir i:last-child {
+    font-size: 12px;
+}
+
+.botao-seguir:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 5px 15px rgba(91, 52, 80, 0.30);
+}
+
+.botao-revelar {
+    width: 100%;
+    max-width: 250px;
+    min-height: 40px;
+
+    padding: 0 16px;
+    margin-top: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border: 1px solid rgba(91, 52, 80, 0.45);
+    border-radius: 30px;
+
+    background: transparent;
+
+    color: #5B3450;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 8px;
+    font-weight: 400;
+    letter-spacing: 1.4px;
+
+    cursor: pointer;
+}
+
+.botao-revelar span {
+    flex: 1;
+    text-align: center;
+}
+
+.botao-revelar i {
+    font-size: 11px;
+}
+
+.pagina-seguir::before {
+    background-image: url("assets/backgrounds/backgroundSeguir.png");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.pagina-seguir .card-mensagem {
+    width: 88%;
+    max-width: 390px;
+
+    aspect-ratio: 1024 / 1536;
+
+    min-height: 0;
+
+    background-image: url("assets/backgrounds/backgroundCard.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    justify-content: flex-start;
+    /* padding-top:20px; */
+    border: none;
+    box-shadow: none;
+}
+
+.pagina-seguir .logo-aion {
+    margin-top: 15px;
+    margin-bottom: 5px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+}
+
+.pagina-seguir .logo-aion img {
+    width: 75px;
+}
+
+.pagina-seguir .subtitulo-aion {
+    font-family: 'Poppins', sans-serif;
+    font-size: 7px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #5B3450;
+    white-space: nowrap;
+}
+
+.pagina-seguir .tela-seguir {
+    padding-top: 0;
+}
+
+body.pagina-seguir::before {
+    background-image: url("assets/backgrounds/backgroundSeguir.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body.pagina-seguir {
+    overflow-x: hidden;
+    overflow-y: auto;
+}

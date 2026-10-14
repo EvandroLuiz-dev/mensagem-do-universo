@@ -10,7 +10,7 @@ botoesSignos.forEach((botao) => {
             .find((classe) => classe.startsWith("signo-"))
             .replace("signo-", "");
 
-        window.location.href = `resultado.html?signo=${signo}`;
+        window.location.href = `seguir.html?signo=${signo}`;
     });
 });
 
@@ -33,7 +33,9 @@ console.log("Signo escolhido:", signo);
 
 const nomeSigno = document.querySelector("#nome-signo");
 
-nomeSigno.textContent = nomesSignos[signo];
+if (nomeSigno) {
+    nomeSigno.textContent = nomesSignos[signo];
+}
 
 const backgroundsSignos = {
     aries: "url('assets/backgrounds/aries.png')",
@@ -324,3 +326,4 @@ if (iconeSigno) {
     iconeSigno.src = iconesSignos[signo];
     iconeSigno.alt = nomesSignos[signo];
 }
+
