@@ -1,20 +1,31 @@
 * {
+
     margin: 0;
+
     padding: 0;
+
     box-sizing: border-box;
+
 }
 
 html {
+
     background: #21102f;
+
     overscroll-behavior-y: none;
+
 }
 
 body {
+
     position: relative;
+
     min-height: 100vh;
+
     min-height: 100dvh;
 
     font-family: 'Poppins', sans-serif;
+
     color: #ffffff;
 
     overflow-x: hidden;
@@ -22,151 +33,223 @@ body {
     background: #21102f;
 
     overscroll-behavior-y: none;
+
 }
 
-
 /* =========================
+
    FUNDO
-========================= */
+
+   ========================= */
 
 body::before {
+
     content: "";
 
     position: fixed;
+
     inset: 0;
 
     width: 100%;
+
     height: 100%;
 
-    background-image: url("assets/backgrounds/background1\ \(3\).png");
+    background-image: url("assets/backgrounds/background1 (3).png");
+
     background-size: cover;
+
     background-position: center top;
+
     background-repeat: no-repeat;
 
     z-index: 0;
 
     pointer-events: none;
-}
 
+}
 
 /* CONTEÚDO ACIMA DO FUNDO */
 
 header,
+
 main {
+
     position: relative;
+
     z-index: 1;
 
     transform: translateY(-15px);
+
 }
 
-
 /* =========================
+
    CABEÇALHO
-========================= */
+
+   ========================= */
 
 .cabecalho {
+
     text-align: center;
+
     padding: 25px 20px 20px;
+
 }
 
 .logo-aion {
+
     display: flex;
+
     justify-content: center;
+
     margin-bottom: 4px;
+
 }
 
 .logo-aion img {
+
     width: 45px;
+
     height: auto;
+
     display: block;
+
 }
 
 .cabecalho h1 {
+
     font-family: 'Cormorant Garamond', serif;
+
     font-size: 48px;
+
     font-weight: 400;
+
     line-height: 1;
+
     margin-top: 15px;
+
     color: #5B3450;
 
     white-space: nowrap;
 
     text-shadow:
-    0 2px 5px rgba(91, 52, 80, 0.35);
+
+        0 2px 5px rgba(91, 52, 80, 0.35);
+
 }
 
 .cabecalho::before {
+
     content: "";
 
     position: absolute;
 
     top: 0;
+
     left: 0;
+
     right: 0;
 
     height: 220px;
 
     background: linear-gradient(to bottom,
+
             rgba(20, 8, 35, 0.20),
+
             rgba(20, 8, 35, 0));
 
     z-index: -1;
+
     pointer-events: none;
+
 }
 
 .descricao {
+
     margin: 8px auto 0;
+
     font-family: 'Poppins', sans-serif;
+
     font-size: 10px;
+
     font-weight: 500;
+
     letter-spacing: 2px;
+
     line-height: 1.6;
+
     text-align: center;
+
     color: #5B3450;
+
 }
+
 .divisor {
+
     display: flex;
+
     align-items: center;
+
     justify-content: center;
+
     width: 100%;
+
     margin: 8px auto;
+
 }
 
 .linha {
+
     height: 1px;
+
     width: 75px;
+
     background: rgba(91, 52, 80, 0.45);
+
 }
 
 .lua-divisor {
+
     position: relative;
+
     margin: 0 8px;
 
     font-family: 'Cormorant Garamond', serif;
+
     font-size: 20px;
+
     color: #5B3450;
 
     line-height: 1;
+
 }
 
 /* =========================
+
    SELEÇÃO DOS SIGNOS
-========================= */
+
+   ========================= */
 
 .selecao-signos {
+
     width: 100%;
+
     max-width: 420px;
 
     padding: 0 18px 40px;
 
     margin: -15px auto 0;
+
 }
 
 .selecao-signos h2 {
+
     margin-bottom: 10px;
 
     font-family: 'Cormorant Garamond', serif;
+
     font-size: 26px;
+
     font-weight: 400;
 
     text-align: center;
@@ -174,44 +257,59 @@ main {
     color: #5B3450;
 
     text-shadow:
-    0 2px 5px rgba(91, 52, 80, 0.35);
+
+        0 2px 5px rgba(91, 52, 80, 0.35);
+
 }
 
-
 /* =========================
+
    GRID
-========================= */
+
+   ========================= */
 
 .lista-signos {
+
     list-style: none;
 
     display: grid;
+
     grid-template-columns: repeat(2, 1fr);
 
     gap: 10px;
+
 }
 
-
 /* =========================
+
    BOTÕES
-========================= */
+
+   ========================= */
 
 .signo {
+
     position: relative;
 
     width: 100%;
+
     min-height: 52px;
 
     padding: 5px 8px;
 
     display: flex;
+
     flex-direction: row;
+
     align-items: center;
+
     justify-content: flex-start;
+
     gap: 8px;
 
     font-family: 'Poppins', sans-serif;
+
     font-size: 12px;
+
     font-weight: 500;
 
     color: #ffffff;
@@ -219,193 +317,241 @@ main {
     background: rgba(65, 38, 75, 0.28);
 
     border: 1px solid rgba(255, 255, 255, 0.28);
+
     border-radius: 16px;
 
     cursor: pointer;
 
     backdrop-filter: blur(5px);
+
     -webkit-backdrop-filter: blur(5px);
 
     transition:
+
         border-color 0.3s ease,
+
         box-shadow 0.3s ease,
+
         background 0.3s ease,
+
         transform 0.3s ease;
+
 }
 
-
 /* =========================
+
    ÍCONE
-========================= */
+
+   ========================= */
 
 .icone-signo {
+
     width: 42px;
+
     height: 42px;
 
     display: flex;
+
     align-items: center;
+
     justify-content: center;
 
     border: 1px solid rgba(255, 255, 255, 0.55);
+
     border-radius: 50%;
+
 }
 
 .icone-signo::before {
+
     content: "";
 
     display: block;
+
     width: 24px;
+
     height: 24px;
 
-    background-color: #5B3450;
+    background-color: #D4AF37;
 
     mask-repeat: no-repeat;
+
     mask-position: center;
+
     mask-size: contain;
 
     -webkit-mask-repeat: no-repeat;
+
     -webkit-mask-position: center;
+
     -webkit-mask-size: contain;
+
 }
 
-
 /* =========================
+
    ÍCONES DOS SIGNOS
-========================= */
+
+   ========================= */
 
 .signo-capricornio .icone-signo::before {
+
     mask-image: url("assets/icons/capricorn.svg");
+
 }
 
 .signo-aquario .icone-signo::before {
+
     mask-image: url("assets/icons/aquarius.svg");
+
 }
 
 .signo-peixes .icone-signo::before {
+
     mask-image: url("assets/icons/pisces.svg");
+
 }
 
 .signo-aries .icone-signo::before {
+
     mask-image: url("assets/icons/aries.svg");
+
 }
 
 .signo-touro .icone-signo::before {
+
     mask-image: url("assets/icons/taurus2.svg");
+
     -webkit-mask-image: url("assets/icons/taurus2.svg");
+
 }
 
 .signo-gemeos .icone-signo::before {
+
     mask-image: url("assets/icons/gemini.svg");
+
 }
 
 .signo-cancer .icone-signo::before {
+
     mask-image: url("assets/icons/cancer.svg");
+
 }
 
 .signo-leao .icone-signo::before {
+
     mask-image: url("assets/icons/leo.svg");
+
 }
 
 .signo-virgem .icone-signo::before {
+
     mask-image: url("assets/icons/virgo.svg");
+
 }
 
 .signo-libra .icone-signo::before {
+
     mask-image: url("assets/icons/libra.svg");
+
 }
 
 .signo-escorpiao .icone-signo::before {
+
     mask-image: url("assets/icons/scorpio.svg");
+
 }
 
 .signo-sagitario .icone-signo::before {
-    mask-image: url("assets/icons/sagittarius.svg");
-}
 
+    mask-image: url("assets/icons/sagittarius.svg");
+
+}
 
 /* =========================
+
    HOVER
-========================= */
 
-.signo:hover {
-    background: rgba(91, 52, 80, 0.20);
-
-    border-color: #5B3450;
-
-    box-shadow:
-        0 0 10px rgba(91, 52, 80, 0.30),
-        0 0 20px rgba(91, 52, 80, 0.18);
-
-    transform: translateY(-2px);
-}
+   ========================= */
 
 .signo:active {
+
     background: rgba(91, 52, 80, 0.20);
+
     border-color: #5B3450;
 
     box-shadow:
+
         0 0 10px rgba(91, 52, 80, 0.30),
+
         0 0 20px rgba(91, 52, 80, 0.18);
 
     transform: translateY(-2px);
+
 }
-
-
 
 /* =========================
+
    TELA SEGUIR A AION
-========================= */
+
+   ========================= */
 
 .pagina-seguir {
+
     background: #21102f;
+
     height: 100vh;
+
     overflow: hidden;
+
 }
 
 .pagina-seguir {
+
     background-image: url("assets/backgrounds/backgroundSeguir.png");
+
     background-size: 100% 100%;
+
     background-position: center;
+
     background-repeat: no-repeat;
+
     background-color: #21102f;
+
 }
 
 .pagina-seguir main {
+
     transform: none;
+
 }
 
 .tela-seguir {
+
     width: 100%;
     min-height: calc(100vh - 90px);
-
     display: flex;
     justify-content: center;
     align-items: flex-start;
-
     padding: 20px;
+
 }
 
 .card-mensagem {
-    position: relative;
 
+    position: relative;
     width: 100%;
     max-width: 360px;
-
     min-height: 520px;
-
     padding: 30px 24px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     text-align: center;
-
     background-image: url("assets/backgrounds/backgroundCard.png");
     background-size: cover;
     background-position: center;
-
     border-radius: 28px;
 
     /* border: 1px solid rgba(212, 175, 55, 0.65); */
@@ -413,90 +559,89 @@ main {
     box-shadow: none;
 
     /* overflow: hidden; */
+
 }
 
 .ilustracao-mensagem {
-    width: 115px;
-    height: 115px;
 
+    width: 100px;
+    height: 100px;
     object-fit: contain;
-
     display: block;
+    margin-bottom: 8px;
 
-    margin-bottom: 12px;
 }
 
 .card-mensagem h1 {
-    font-family: 'Cormorant Garamond', serif;
 
+    font-family: 'Cormorant Garamond', serif;
     font-size: 34px;
     line-height: 1.05;
     font-weight: 500;
-
     color: #5B3450;
-
     margin-bottom: 14px;
+
 }
 
 .card-mensagem .divisor {
     width: 100%;
     margin: 4px auto 18px;
+
 }
 
 .card-mensagem .linha {
+
     width: 65px;
     background: rgba(91, 52, 80, 0.45);
+
 }
 
 .card-mensagem .lua-divisor {
     color: #5B3450;
+
 }
 
 .card-mensagem p {
+
     max-width: 270px;
-
     margin-bottom: 24px;
-
     font-family: 'Poppins', sans-serif;
     font-size: 11px;
     line-height: 1.7;
     letter-spacing: 0.5px;
-
     color: #5B3450;
+
 }
 
 .botao-seguir {
     width: 100%;
     max-width: 250px;
     min-height: 42px;
-
     padding: 0 14px;
-
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 14px;
-
     border: none;
     border-radius: 30px;
-
     background: #5B3450;
     color: #F3D39A;
-
     text-decoration: none;
-
     font-family: 'Poppins', sans-serif;
     font-size: 9px;
     font-weight: 400;
     letter-spacing: 1.5px;
+
 }
 
 .botao-seguir span {
     flex: none;
+
 }
 
 .botao-seguir i {
     font-size: 16px;
+
 }
 
 .botao-seguir i:last-child {
@@ -504,78 +649,77 @@ main {
 }
 
 .botao-seguir:hover {
-    transform: translateY(-2px);
 
+    transform: translateY(-2px);
     box-shadow:
         0 5px 15px rgba(91, 52, 80, 0.30);
+
 }
 
 .botao-revelar {
+
     width: 100%;
     max-width: 250px;
     min-height: 40px;
-
     padding: 0 16px;
     margin-top: 5px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     border: 1px solid rgba(91, 52, 80, 0.45);
     border-radius: 30px;
-
     background: transparent;
-
     color: #5B3450;
-
     font-family: 'Poppins', sans-serif;
     font-size: 8px;
     font-weight: 400;
     letter-spacing: 1.4px;
-
     cursor: pointer;
+
 }
 
 .botao-revelar span {
+
     flex: 1;
     text-align: center;
+
 }
 
 .botao-revelar i {
     font-size: 11px;
+
 }
 
 .pagina-seguir::before {
+
     background-image: url("assets/backgrounds/backgroundSeguir.png");
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
+
 }
 
 .pagina-seguir .card-mensagem {
-    width: 88%;
-    max-width: 390px;
 
+    width: 100%;
+    max-width: 500px;
     aspect-ratio: 1024 / 1536;
-
     min-height: 0;
-
     background-image: url("assets/backgrounds/backgroundCard.png");
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
-
     justify-content: flex-start;
     /* padding-top:20px; */
     border: none;
     box-shadow: none;
+
 }
 
 .pagina-seguir .logo-aion {
+
     margin-top: 15px;
     margin-bottom: 5px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -587,26 +731,134 @@ main {
 }
 
 .pagina-seguir .subtitulo-aion {
+
     font-family: 'Poppins', sans-serif;
     font-size: 7px;
     font-weight: 400;
     letter-spacing: 2px;
     color: #5B3450;
     white-space: nowrap;
-}
 
+}
 .pagina-seguir .tela-seguir {
     padding-top: 0;
+
 }
 
 body.pagina-seguir::before {
+
     background-image: url("assets/backgrounds/backgroundSeguir.png");
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
+
 }
 
 body.pagina-seguir {
-    overflow-x: hidden;
-    overflow-y: auto;
+    height: 100vh;
+    height: 100dvh;
+    overflow: hidden;
+}
+
+@media (hover: hover) and (pointer: fine) {
+
+    .signo:hover {
+
+        background: rgba(91, 52, 80, 0.20);
+        border-color: rgba(91, 52, 80, 0.75);
+        box-shadow:
+            0 0 10px rgba(91, 52, 80, 0.30),
+            0 0 20px rgba(91, 52, 80, 0.18);
+        transform: translateY(-2px);
+
+    }
+
+}
+
+/* Efeito temporário ao tocar no celular */
+
+.signo:active {
+
+    background: rgba(91, 52, 80, 0.20);
+    border-color: rgba(91, 52, 80, 0.75);
+    box-shadow:
+        0 0 10px rgba(91, 52, 80, 0.30),
+        0 0 20px rgba(91, 52, 80, 0.18);
+    transform: scale(0.98);
+
+}
+
+@media (max-width: 768px) {
+
+    /* Trava a página inicial no tamanho da tela, sem afetar as outras páginas. */
+    html:has(body.pagina-inicial) {
+        height: 100%;
+        overflow: hidden;
+    }
+
+    body.pagina-inicial {
+        position: fixed;
+        inset: 0;
+        width: 100%;
+        height: 100vh;
+        height: 100dvh;
+        min-height: 0;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    .pagina-seguir .ilustracao-mensagem {
+    margin-bottom: 4px;
+}
+
+.pagina-seguir .card-mensagem h1 {
+    margin-bottom: 8px;
+}
+
+.pagina-seguir .card-mensagem p {
+    max-width: 220px;
+    width: 100%;
+    line-height: 1.6;
+    margin: 10px auto 14px;
+}
+
+    .lista-signos {
+        gap: 8px;
+    }
+
+    .signo {
+        padding: 6px 8px;
+        min-height: 40px;
+    }
+
+    .icone-signo::before {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Aproxima visualmente o logo do card */
+    .pagina-seguir header {
+        transform: none;
+    }
+
+    .pagina-seguir .cabecalho {
+        padding-bottom: 0;
+    }
+
+    .pagina-seguir .logo-aion {
+        margin-bottom: 0;
+    }
+
+    /* Aumenta o card */
+    .pagina-seguir .card-mensagem {
+        width: 100%;
+        max-width: 500px;
+    }
+    .pagina-seguir .card-mensagem .divisor {
+    margin-bottom: 4px;
+}
+
 }
