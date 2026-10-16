@@ -9,57 +9,300 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap"
-        rel="stylesheet">
+        rel="stylesheet"
+    >
 
     <title>Mensagem do Universo</title>
 </head>
 
 <body>
 
+    <!-- =========================
+         CABEÇALHO
+    ========================== -->
+
     <header>
-        <div class="titulo-signo">
-            <img id="icone-signo" src="" alt="">
-            <h1 id="nome-signo"></h1>
+
+        <button
+            class="botao-topo voltar-signos"
+            onclick="window.location.href='index.html'"
+            aria-label="Voltar para os signos"
+        >
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+
+        <div class="logo-aion">
+
+            <img src="assets/logo/aion-logo-horizontal.png" alt="AION">
+
+            <small>
+                YOGA · CONSCIÊNCIA · MOVIMENTO
+            </small>
+
         </div>
+
+
+        <button
+            class="botao-topo inicio"
+            onclick="window.location.href='index.html'"
+            aria-label="Ir para o início"
+        >
+            <i class="fa-solid fa-house"></i>
+        </button>
+
     </header>
+
+
+    <!-- =========================
+         CONTEÚDO PRINCIPAL
+    ========================== -->
 
     <main>
 
-        <section class="mensagem">
-            <h2>Mensagem do universo</h2>
-            <p id="mensagem-signo"></p>
+        <!-- TÍTULO -->
+
+        <div class="titulo-pagina">
+
+            <h1>
+                Sua Mensagem<br> do
+                <em>Universo</em>
+            </h1>
+
+
+            <div class="divisor">
+
+                <span></span>
+
+                <i class="fa-solid fa-moon"></i>
+
+                <span></span>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+             SLIDER
+        ========================== -->
+
+        <section
+            class="slider-container"
+            aria-label="Mensagem e prática de yoga"
+        >
+
+            <div class="slider" id="slider">
+
+
+                <!-- =========================
+                     CARD DA MENSAGEM
+                ========================== -->
+
+                <article class="card card-mensagem">
+
+                    <div class="conteudo-card">
+
+
+                        <!-- SIGNO -->
+
+                        <div class="cabecalho-card">
+
+                            <img
+                                id="icone-signo"
+                                src=""
+                                alt="Símbolo do signo"
+                            >
+
+                            <h2 id="nome-signo"></h2>
+
+                            <span id="data-signo"></span>
+
+                        </div>
+
+
+                        <!-- MENSAGEM -->
+
+                        <div class="mensagem-texto">
+
+                            <p id="mensagem-signo"></p>
+
+                        </div>
+
+
+                        <!-- REFLEXÃO -->
+
+                        <div class="reflexao">
+
+                            <div class="linha-reflexao">
+
+                                <span></span>
+
+                                <i class="fa-solid fa-star"></i>
+
+                                <span></span>
+
+                            </div>
+
+
+                            <small>
+                                PARA REFLETIR
+                            </small>
+
+
+                            <p id="reflexao-signo"></p>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- =========================
+                     CARD DE YOGA
+                ========================== -->
+
+                <article class="card card-yoga">
+
+                    <div class="conteudo-yoga">
+
+
+                        <div class="cabecalho-yoga">
+
+                            <span>
+                                ✦ SUA PRÁTICA DE HOJE ✦
+                            </span>
+
+
+                            <h2 id="nome-postura">
+                                Postura do Guerreiro I
+                            </h2>
+
+
+                            <small>
+                                VIRABHADRASANA I
+                            </small>
+
+                        </div>
+
+
+                        <img
+                            id="yoga-signo"
+                            src="assets/yoga/placeholder.png"
+                            alt="Posição de Yoga"
+                        >
+
+                    </div>
+
+                </article>
+
+            </div>
+<div class="indicador-arraste">
+        <span>Deslize para o lado</span>
+        <span class="seta-arraste">→</span>
+    </div>
         </section>
 
-        <section class="yoga">
-            <img id="yoga-signo" src="assets/yoga/placeholder.png" alt="Posição de Yoga">
-        </section>
+
+        <!-- =========================
+             INDICADOR DO SLIDER
+        ========================== -->
+
+        <div class="indicador-slider">
+
+            <div class="pontos">
+
+                <span class="ponto ativo"></span>
+
+                <span class="ponto"></span>
+
+            </div>
+
+
+            <!-- <p>
+                Arraste para o lado
+            </p> -->
+
+        </div>
+
+
+        <!-- =========================
+             OUTRA MENSAGEM
+        ========================== -->
+
+        <button
+            class="outra-mensagem"
+            id="outra-mensagem"
+            type="button"
+        >
+
+            <i class="fa-solid fa-rotate"></i>
+
+            <span>
+                VER OUTRA MENSAGEM
+            </span>
+
+        </button>
 
     </main>
 
-    <footer>
-    <a href="https://www.instagram.com/aionmove/" target="_blank" rel="noopener noreferrer">
+
+    <!-- =========================
+         RODAPÉ
+    ========================== -->
+
+    <footer class="navegacao-inferior">
+
+    <a
+        href="https://www.instagram.com/aionmove/"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
         <i class="fa-brands fa-instagram"></i>
-        Instagram
+        <span>INSTAGRAM</span>
+        <small>@aionmove</small>
     </a>
 
-    <a href="https://api.whatsapp.com/send?phone=5548998608103&text=Ol%C3%A1%2C+gostaria+de+conhecer+mais+sobre+a+minha+jornada+de+transforma%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer">
+    <a
+        href="https://api.whatsapp.com/send?phone=5548998608103&text=Ol%C3%A1%2C+gostaria+de+conhecer+mais+sobre+a+minha+jornada+de+transforma%C3%A7%C3%A3o."
+        target="_blank"
+        rel="noopener noreferrer"
+    >
         <i class="fa-brands fa-whatsapp"></i>
-        WhatsApp
+        <span>WHATSAPP</span>
+        <small>Fale com a gente</small>
     </a>
 
     <a href="#">
-        <i class="fa-solid fa-circle-question"></i>
-        Quiz
+        <i class="fa-regular fa-clipboard"></i>
+        <span>QUESTIONÁRIO</span>
+        <small>Conte pra gente</small>
     </a>
 
-    <a href="index.html" class="voltar">
-        ← Voltar
+    <a href="#">
+        <i class="fa-solid fa-users"></i>
+        <span>COMUNIDADE</span>
+        <small>Acesse o grupo</small>
     </a>
+
 </footer>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
     <script src="script.js"></script>
+
 </body>
 
 </html>

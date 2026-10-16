@@ -37,25 +37,7 @@ if (nomeSigno) {
     nomeSigno.textContent = nomesSignos[signo];
 }
 
-const backgroundsSignos = {
-    aries: "url('assets/backgrounds/aries.png')",
-    touro: "url('assets/backgrounds/touro.png')",
-    gemeos: "url('assets/backgrounds/gemeos.png')",
-    cancer: "url('assets/backgrounds/cancer.png')",
-    leao: "url('assets/backgrounds/leao.png')",
-    virgem: "url('assets/backgrounds/virgem.png')",
-    libra: "url('assets/backgrounds/libra.png')",
-    escorpiao: "url('assets/backgrounds/escorpiao.png')",
-    sagitario: "url('assets/backgrounds/sagitario.png')",
-    capricornio: "url('assets/backgrounds/capricornio.png')",
-    aquario: "url('assets/backgrounds/aquario.png')",
-    peixes: "url('assets/backgrounds/peixes.png')"
-};
 
-document.body.style.setProperty(
-    "--background-signo",
-    backgroundsSignos[signo]
-);
 
 const mensagensSignos = {
     aries: [
@@ -275,6 +257,20 @@ const mensagensSignos = {
     ]
 };
 
+const reflexoes = [
+    "O que em você já é suficiente, mesmo que ninguém mais veja?",
+    "O que você precisa deixar ir para abrir espaço para o novo?",
+    "Quando foi a última vez que você realmente ouviu a si mesma?",
+    "O que seu corpo está tentando dizer que sua mente ainda não percebeu?",
+    "O que você faria diferente se não tivesse medo de errar?",
+    "Onde você tem colocado sua energia ultimamente?",
+    "O que merece mais espaço na sua vida neste momento?",
+    "Que parte de você está pedindo mais cuidado?",
+    "O que você pode aceitar em vez de tentar controlar?",
+    "Quem você está se tornando a cada escolha que faz?"
+];
+
+
 const mensagemSigno = document.querySelector("#mensagem-signo");
 
 const mensagens = mensagensSignos[signo];
@@ -284,6 +280,14 @@ const mensagemAleatoria =
 
 mensagemSigno.textContent = mensagemAleatoria;
 
+const reflexaoSigno = document.querySelector("#reflexao-signo");
+
+if (reflexaoSigno) {
+    const reflexaoAleatoria =
+        reflexoes[Math.floor(Math.random() * reflexoes.length)];
+
+    reflexaoSigno.textContent = reflexaoAleatoria;
+}
 const yogaSignos = {
     aries: "assets/yoga/placeholder.png",
     touro: "assets/yoga/placeholder.png",
@@ -325,5 +329,165 @@ const iconeSigno = document.querySelector("#icone-signo");
 if (iconeSigno) {
     iconeSigno.src = iconesSignos[signo];
     iconeSigno.alt = nomesSignos[signo];
+
+    console.log("Signo:", signo);
+console.log("SVG:", iconesSignos[signo]);
 }
 
+const slider = document.querySelector("#slider");
+const pontos = document.querySelectorAll(".ponto");
+
+let slideAtual = 0;
+
+let inicioX = 0;
+let movimentoX = 0;
+let arrastando = false;
+
+
+/* =========================
+   MUDAR SLIDE
+========================= */
+
+function mudarSlide(indice) {
+
+    slideAtual = indice;
+
+    const cards = slider.querySelectorAll(".card");
+
+    if (!cards[indice]) return;
+
+    cards[indice].scrollIntoView({
+        behavior: "smooth",
+        block: "nearest",
+        inline: "center"
+    });
+
+    pontos.forEach((ponto, index) => {
+        ponto.classList.toggle(
+            "ativo",
+            index === slideAtual
+        );
+    });
+}
+
+
+/* =========================
+   TOUCH
+========================= */
+
+slider.addEventListener("touchstart", (evento) => {
+
+    inicioX = evento.touches[0].clientX;
+
+    arrastando = true;
+
+}, { passive: true });
+
+
+slider.addEventListener("touchmove", (evento) => {
+
+    if (!arrastando) return;
+
+    movimentoX = evento.touches[0].clientX;
+
+}, { passive: true });
+
+
+slider.addEventListener("touchend", () => {
+
+    if (!arrastando) return;
+
+    const distancia = movimentoX - inicioX;
+
+    if (Math.abs(distancia) > 50) {
+
+        if (distancia < 0 && slideAtual === 0) {
+            mudarSlide(1);
+        }
+
+        if (distancia > 0 && slideAtual === 1) {
+            mudarSlide(0);
+        }
+    }
+
+    arrastando = false;
+});
+
+
+/* =========================
+   MOUSE — PARA TESTAR NO PC
+========================= */
+
+slider.addEventListener("mousedown", (evento) => {
+
+    inicioX = evento.clientX;
+
+    arrastando = true;
+
+});
+
+
+window.addEventListener("mousemove", (evento) => {
+
+    if (!arrastando) return;
+
+    movimentoX = evento.clientX;
+
+});
+
+
+window.addEventListener("mouseup", () => {
+
+    if (!arrastando) return;
+
+    const distancia = movimentoX - inicioX;
+
+    if (Math.abs(distancia) > 50) {
+
+        if (distancia < 0 && slideAtual === 0) {
+            mudarSlide(1);
+        }
+
+        if (distancia > 0 && slideAtual === 1) {
+            mudarSlide(0);
+        }
+    }
+
+    arrastando = false;
+
+});
+
+
+/* =========================
+   OUTRA MENSAGEM
+========================= */
+
+const botaoOutraMensagem =
+    document.querySelector("#outra-mensagem");
+
+if (botaoOutraMensagem) {
+
+    botaoOutraMensagem.addEventListener("click", () => {
+
+        // Nova mensagem do signo
+        const mensagens = mensagensSignos[signo];
+
+        const novaMensagem =
+            mensagens[Math.floor(Math.random() * mensagens.length)];
+
+        mensagemSigno.textContent = novaMensagem;
+
+
+        // Nova reflexão
+        const novaReflexao =
+            reflexoes[Math.floor(Math.random() * reflexoes.length)];
+
+        reflexaoSigno.textContent = novaReflexao;
+
+
+        // Volta para o card da mensagem
+        mudarSlide(0);
+
+    });
+
+}
