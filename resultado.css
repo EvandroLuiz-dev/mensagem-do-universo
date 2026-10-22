@@ -1005,3 +1005,109 @@ transform: translateY(-25px);
         transform: translateX(-50%);
     }
 }
+
+
+/* =========================
+   CONVITE PARA AULÃO
+========================= */
+
+.convite-aulao {
+    width: 100%;
+    margin-top: 14px;
+    padding: 0 22px 20px;
+    text-align: center;
+}
+
+
+/* DIVISOR */
+
+.divisor-convite {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.divisor-convite span {
+    width: 42px;
+    height: 1px;
+    background: #8b5a70;
+    opacity: 0.7;
+}
+
+.divisor-convite i {
+    font-size: 7px;
+    color: #9a6075;
+}
+
+
+/* TÍTULO */
+
+.convite-aulao h2 {
+    margin: 0 0 8px;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.1;
+
+    color: #321b3d;
+}
+
+
+/* TEXTO */
+
+.convite-aulao p {
+    max-width: 300px;
+    margin: 0 auto;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.45;
+
+    color: #432541;
+}
+
+
+/* BOTÃO */
+
+.botao-comunidade {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+
+    margin-top: 12px;
+    padding: 11px 20px;
+
+    border-radius: 30px;
+
+    background: #5b2d68;
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+
+    box-shadow: none;
+
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.botao-comunidade i {
+    font-size: 10px;
+}
+
+.botao-comunidade:hover {
+    transform: translateY(-1px);
+    opacity: 0.9;
+}
+
+.botao-comunidade:active {
+    transform: scale(0.97);
+}

@@ -49,8 +49,6 @@ const mensagensSignos = {
         "Sua independência é uma força, mas permitir que alguém caminhe ao seu lado também pode trazer descobertas importantes.",
         "Não confunda pressa com coragem. Algumas decisões ficam ainda mais poderosas quando você dá a si mesmo tempo para pensar.",
         "Existe algo que você deseja há algum tempo e talvez esteja esperando um sinal. Talvez o sinal seja justamente a vontade que continua dentro de você.",
-        "Seu entusiasmo pode inspirar outras pessoas. Compartilhe sua energia, mas lembre-se de respeitar o ritmo de quem caminha ao seu lado.",
-        "Quando você acredita em algo, sua determinação pode mover obstáculos. Apenas certifique-se de que está lutando pelo que realmente deseja.",
         "O universo convida você a começar de novo sem carregar o peso de antigas tentativas. Um recomeço não apaga sua experiência, ele usa tudo o que você aprendeu.",
         "Sua espontaneidade pode abrir portas inesperadas. Permita-se experimentar algo diferente sem precisar saber exatamente onde isso vai levar.",
         "Nem sempre vencer significa chegar primeiro. Às vezes, a verdadeira conquista está em permanecer fiel ao que você acredita.",
@@ -64,14 +62,11 @@ const mensagensSignos = {
         "Segurança é importante para você, mas não permita que o medo de perder aquilo que conquistou impeça você de viver novas experiências.",
         "Sua determinação pode levar você muito longe. Quando decide seguir um caminho, confie no seu ritmo e não se compare com quem escolheu uma estrada diferente.",
         "Existe valor em reconhecer tudo aquilo que você já construiu. Antes de buscar o próximo objetivo, olhe para trás e perceba o quanto já avançou.",
-        "Seu coração aprecia aquilo que é verdadeiro e consistente. Não aceite menos apenas porque algo parece conveniente no momento.",
         "Algumas oportunidades chegam devagar, quase sem chamar atenção. Observe com cuidado: aquilo que parece pequeno hoje pode se tornar algo muito importante amanhã.",
         "Você não precisa provar seu valor o tempo todo. Sua presença, sua lealdade e sua capacidade de permanecer firme já dizem muito sobre quem você é.",
         "O prazer também pode ser uma forma de conexão. Permita-se aproveitar uma boa conversa, uma música, um lugar tranquilo ou simplesmente alguns minutos de paz.",
         "Quando algo realmente importa para você, sua persistência se torna uma grande força. Continue, mesmo que os resultados ainda não sejam visíveis.",
-        "Cuidado para não confundir estabilidade com acomodação. Às vezes, sair um pouco da zona de conforto é justamente o que permite que você cresça.",
         "Sua sensibilidade aos detalhes pode revelar aquilo que outras pessoas não percebem. Confie no que seus sentidos estão tentando mostrar.",
-        "Relacionamentos verdadeiros precisam de presença, não apenas de palavras. Demonstre carinho através das pequenas atitudes que fazem alguém se sentir seguro ao seu lado.",
         "Talvez seja hora de deixar de carregar algo apenas porque você se acostumou com aquilo. Permanecer firme é uma virtude, mas saber soltar também é.",
         "O universo lembra você de uma coisa importante: não tenha pressa para colher aquilo que ainda está criando raízes. Continue cuidando do que importa e confie no tempo."
     ],
@@ -96,18 +91,14 @@ const mensagensSignos = {
 
     cancer: [
         "Sua sensibilidade percebe aquilo que muitas pessoas não conseguem enxergar. Confie nela, mas lembre-se de proteger também a sua própria energia.",
-        "Existe força em reconhecer aquilo que você sente. Não esconda suas emoções apenas para parecer mais forte do que realmente está.",
         "O passado pode trazer lembranças importantes, mas ele não precisa decidir o seu futuro. Leve consigo o aprendizado e deixe o restante partir.",
         "Seu cuidado com quem ama é uma das suas maiores qualidades. Apenas não se esqueça de oferecer a si mesmo a mesma atenção.",
-        "Um lugar, uma pessoa ou uma lembrança pode despertar sentimentos profundos. Permita-se sentir sem precisar transformar tudo em uma resposta.",
         "Você pode estar precisando de um pouco mais de recolhimento. Nem todo silêncio é solidão; às vezes ele é exatamente onde a alma encontra descanso.",
         "Sua intuição pode estar tentando mostrar que algo precisa de atenção. Observe seus sentimentos antes de ignorá-los.",
         "Existe um vínculo que merece ser cuidado com mais carinho. Pequenos gestos podem reconstruir uma proximidade que parecia distante.",
         "Não carregue sozinho aquilo que poderia ser compartilhado. Permitir que alguém cuide de você também é uma forma de confiança.",
-        "Seu coração guarda histórias que ajudaram a formar quem você é. Honre sua trajetória sem permanecer preso àquilo que já passou.",
         "O universo convida você a criar um espaço onde possa se sentir seguro para ser exatamente quem é.",
         "Algumas respostas chegam quando você para de lutar contra o que sente. Aceitar uma emoção não significa permitir que ela controle você.",
-        "Seu carinho pode ser uma fonte de conforto para alguém próximo. Mas lembre-se de não transformar cuidado em responsabilidade por tudo que os outros sentem.",
         "Uma fase emocionalmente mais leve pode estar se aproximando. Dê espaço para novas experiências sem exigir que elas sejam perfeitas.",
         "Você não precisa esconder sua delicadeza. Existe coragem em permanecer sensível em um mundo que muitas vezes pede que você endureça."
     ],
@@ -117,17 +108,12 @@ const mensagensSignos = {
         "Sua presença pode inspirar mais do que você imagina. Use sua força para encorajar aqueles que também estão tentando encontrar o próprio caminho.",
         "Você merece reconhecimento, mas não dependa dele para lembrar do seu valor. Saiba enxergar sua própria grandeza.",
         "Um novo palco pode surgir diante de você. Não tenha medo de ocupar espaço quando aquilo que você tem a oferecer merece ser visto.",
-        "Sua criatividade está pedindo liberdade. Faça algo simplesmente porque desperta alegria em você, sem se preocupar imediatamente com aprovação.",
-        "Liderar também significa saber ouvir. Uma pessoa pode trazer uma perspectiva que você ainda não havia considerado.",
         "Seu coração gosta de intensidade e presença. Não aceite relações onde precise diminuir sua luz para que outra pessoa se sinta confortável.",
-        "Existe uma diferença entre orgulho e amor próprio. Escolha proteger aquilo que você é sem fechar as portas para quem deseja conhecê-lo de verdade.",
         "Sua generosidade pode transformar o dia de alguém. Um gesto sincero pode ter mais impacto do que qualquer grande demonstração.",
         "Você está entrando em um momento favorável para mostrar um talento que talvez tenha deixado de lado.",
         "Nem todo reconhecimento chega imediatamente. Continue desenvolvendo aquilo que ama, mesmo quando ninguém estiver olhando.",
         "Sua confiança pode crescer quando você percebe que não precisa ser perfeito para ser admirado.",
-        "O universo convida você a transformar desejo de reconhecimento em expressão verdadeira. Faça por paixão, não apenas por aplausos.",
         "Uma oportunidade pode colocar você em evidência. Receba essa atenção com humildade e use-a para construir algo significativo.",
-        "Sua luz não diminui quando outra pessoa brilha. Existe espaço para que diferentes pessoas expressem sua própria força."
     ],
 
     virgem: [
@@ -257,20 +243,6 @@ const mensagensSignos = {
     ]
 };
 
-const reflexoes = [
-    "O que em você já é suficiente, mesmo que ninguém mais veja?",
-    "O que você precisa deixar ir para abrir espaço para o novo?",
-    "Quando foi a última vez que você realmente ouviu a si mesma?",
-    "O que seu corpo está tentando dizer que sua mente ainda não percebeu?",
-    "O que você faria diferente se não tivesse medo de errar?",
-    "Onde você tem colocado sua energia ultimamente?",
-    "O que merece mais espaço na sua vida neste momento?",
-    "Que parte de você está pedindo mais cuidado?",
-    "O que você pode aceitar em vez de tentar controlar?",
-    "Quem você está se tornando a cada escolha que faz?"
-];
-
-
 const mensagemSigno = document.querySelector("#mensagem-signo");
 
 const mensagens = mensagensSignos[signo];
@@ -279,35 +251,6 @@ const mensagemAleatoria =
     mensagens[Math.floor(Math.random() * mensagens.length)];
 
 mensagemSigno.textContent = mensagemAleatoria;
-
-const reflexaoSigno = document.querySelector("#reflexao-signo");
-
-if (reflexaoSigno) {
-    const reflexaoAleatoria =
-        reflexoes[Math.floor(Math.random() * reflexoes.length)];
-
-    reflexaoSigno.textContent = reflexaoAleatoria;
-}
-const yogaSignos = {
-    aries: "assets/yoga/placeholder.png",
-    touro: "assets/yoga/placeholder.png",
-    gemeos: "assets/yoga/placeholder.png",
-    cancer: "assets/yoga/placeholder.png",
-    leao: "assets/yoga/placeholder.png",
-    virgem: "assets/yoga/placeholder.png",
-    libra: "assets/yoga/placeholder.png",
-    escorpiao: "assets/yoga/placeholder.png",
-    sagitario: "assets/yoga/placeholder.png",
-    capricornio: "assets/yoga/placeholder.png",
-    aquario: "assets/yoga/placeholder.png",
-    peixes: "assets/yoga/placeholder.png"
-};
-
-const yogaSigno = document.querySelector("#yoga-signo");
-
-yogaSigno.src = yogaSignos[signo];
-yogaSigno.alt = `Posição de Yoga para ${nomesSignos[signo]}`;
-
 
 const iconesSignos = {
     aries: "assets/icons/aries.svg",
@@ -334,160 +277,6 @@ if (iconeSigno) {
 console.log("SVG:", iconesSignos[signo]);
 }
 
-const slider = document.querySelector("#slider");
-const pontos = document.querySelectorAll(".ponto");
 
-let slideAtual = 0;
 
-let inicioX = 0;
-let movimentoX = 0;
-let arrastando = false;
 
-
-/* =========================
-   MUDAR SLIDE
-========================= */
-
-function mudarSlide(indice) {
-
-    slideAtual = indice;
-
-    const cards = slider.querySelectorAll(".card");
-
-    if (!cards[indice]) return;
-
-    cards[indice].scrollIntoView({
-        behavior: "smooth",
-        block: "nearest",
-        inline: "center"
-    });
-
-    pontos.forEach((ponto, index) => {
-        ponto.classList.toggle(
-            "ativo",
-            index === slideAtual
-        );
-    });
-}
-
-
-/* =========================
-   TOUCH
-========================= */
-
-slider.addEventListener("touchstart", (evento) => {
-
-    inicioX = evento.touches[0].clientX;
-
-    arrastando = true;
-
-}, { passive: true });
-
-
-slider.addEventListener("touchmove", (evento) => {
-
-    if (!arrastando) return;
-
-    movimentoX = evento.touches[0].clientX;
-
-}, { passive: true });
-
-
-slider.addEventListener("touchend", () => {
-
-    if (!arrastando) return;
-
-    const distancia = movimentoX - inicioX;
-
-    if (Math.abs(distancia) > 50) {
-
-        if (distancia < 0 && slideAtual === 0) {
-            mudarSlide(1);
-        }
-
-        if (distancia > 0 && slideAtual === 1) {
-            mudarSlide(0);
-        }
-    }
-
-    arrastando = false;
-});
-
-
-/* =========================
-   MOUSE — PARA TESTAR NO PC
-========================= */
-
-slider.addEventListener("mousedown", (evento) => {
-
-    inicioX = evento.clientX;
-
-    arrastando = true;
-
-});
-
-
-window.addEventListener("mousemove", (evento) => {
-
-    if (!arrastando) return;
-
-    movimentoX = evento.clientX;
-
-});
-
-
-window.addEventListener("mouseup", () => {
-
-    if (!arrastando) return;
-
-    const distancia = movimentoX - inicioX;
-
-    if (Math.abs(distancia) > 50) {
-
-        if (distancia < 0 && slideAtual === 0) {
-            mudarSlide(1);
-        }
-
-        if (distancia > 0 && slideAtual === 1) {
-            mudarSlide(0);
-        }
-    }
-
-    arrastando = false;
-
-});
-
-
-/* =========================
-   OUTRA MENSAGEM
-========================= */
-
-const botaoOutraMensagem =
-    document.querySelector("#outra-mensagem");
-
-if (botaoOutraMensagem) {
-
-    botaoOutraMensagem.addEventListener("click", () => {
-
-        // Nova mensagem do signo
-        const mensagens = mensagensSignos[signo];
-
-        const novaMensagem =
-            mensagens[Math.floor(Math.random() * mensagens.length)];
-
-        mensagemSigno.textContent = novaMensagem;
-
-
-        // Nova reflexão
-        const novaReflexao =
-            reflexoes[Math.floor(Math.random() * reflexoes.length)];
-
-        reflexaoSigno.textContent = novaReflexao;
-
-
-        // Volta para o card da mensagem
-        mudarSlide(0);
-
-    });
-
-}

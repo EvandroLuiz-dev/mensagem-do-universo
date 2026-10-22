@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -42,7 +43,10 @@
 
         <div class="logo-aion">
 
-            <img src="assets/logo/aion-logo-horizontal.png" alt="AION">
+            <img
+                src="assets/logo/aion-logo-horizontal.png"
+                alt="AION"
+            >
 
             <small>
                 YOGA · CONSCIÊNCIA · MOVIMENTO
@@ -92,166 +96,75 @@
 
 
         <!-- =========================
-             SLIDER
+             CARD DA MENSAGEM
         ========================== -->
 
-        <section
-            class="slider-container"
-            aria-label="Mensagem e prática de yoga"
-        >
+        <article class="card card-mensagem">
 
-            <div class="slider" id="slider">
+            <div class="conteudo-card">
 
+                <!-- SIGNO -->
 
-                <!-- =========================
-                     CARD DA MENSAGEM
-                ========================== -->
+                <div class="cabecalho-card">
 
-                <article class="card card-mensagem">
+                    <img
+                        id="icone-signo"
+                        src=""
+                        alt="Símbolo do signo"
+                    >
 
-                    <div class="conteudo-card">
+                    <h2 id="nome-signo"></h2>
 
+                    <span id="data-signo"></span>
 
-                        <!-- SIGNO -->
-
-                        <div class="cabecalho-card">
-
-                            <img
-                                id="icone-signo"
-                                src=""
-                                alt="Símbolo do signo"
-                            >
-
-                            <h2 id="nome-signo"></h2>
-
-                            <span id="data-signo"></span>
-
-                        </div>
+                </div>
 
 
-                        <!-- MENSAGEM -->
+                <!-- MENSAGEM -->
 
-                        <div class="mensagem-texto">
+                <div class="mensagem-texto">
 
-                            <p id="mensagem-signo"></p>
+                    <p id="mensagem-signo"></p>
 
-                        </div>
-
-
-                        <!-- REFLEXÃO -->
-
-                        <div class="reflexao">
-
-                            <div class="linha-reflexao">
-
-                                <span></span>
-
-                                <i class="fa-solid fa-star"></i>
-
-                                <span></span>
-
-                            </div>
-
-
-                            <small>
-                                PARA REFLETIR
-                            </small>
-
-
-                            <p id="reflexao-signo"></p>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-                <!-- =========================
-                     CARD DE YOGA
-                ========================== -->
-
-                <article class="card card-yoga">
-
-                    <div class="conteudo-yoga">
-
-
-                        <div class="cabecalho-yoga">
-
-                            <span>
-                                ✦ SUA PRÁTICA DE HOJE ✦
-                            </span>
-
-
-                            <h2 id="nome-postura">
-                                Postura do Guerreiro I
-                            </h2>
-
-
-                            <small>
-                                VIRABHADRASANA I
-                            </small>
-
-                        </div>
-
-
-                        <img
-                            id="yoga-signo"
-                            src="assets/yoga/placeholder.png"
-                            alt="Posição de Yoga"
-                        >
-
-                    </div>
-
-                </article>
+                </div>
 
             </div>
-<div class="indicador-arraste">
-        <span>Deslize para o lado</span>
-        <span class="seta-arraste">→</span>
+
+        </article>
+
+
+        <!-- =========================
+     CONVITE PARA AULÃO
+========================== -->
+
+<div class="convite-aulao">
+
+    <div class="divisor-convite">
+        <span></span>
+        <i class="fa-solid fa-star"></i>
+        <span></span>
     </div>
-        </section>
 
+    <h2>
+        Um convite especial para você!
+    </h2>
 
-        <!-- =========================
-             INDICADOR DO SLIDER
-        ========================== -->
+    <p>
+        Quer participar do próximo aulão de yoga
+        de forma gratuita? Entre na comunidade
+        e vote na enquete que será disponibilizada!
+    </p>
 
-        <div class="indicador-slider">
+    <a
+        href="#"
+        class="botao-comunidade"
+    >
+        <i class="fa-solid fa-users"></i>
+        <span>ENTRAR NA COMUNIDADE</span>
+        <i class="fa-solid fa-arrow-right"></i>
+    </a>
 
-            <div class="pontos">
-
-                <span class="ponto ativo"></span>
-
-                <span class="ponto"></span>
-
-            </div>
-
-
-            <!-- <p>
-                Arraste para o lado
-            </p> -->
-
-        </div>
-
-
-        <!-- =========================
-             OUTRA MENSAGEM
-        ========================== -->
-
-        <button
-            class="outra-mensagem"
-            id="outra-mensagem"
-            type="button"
-        >
-
-            <i class="fa-solid fa-rotate"></i>
-
-            <span>
-                VER OUTRA MENSAGEM
-            </span>
-
-        </button>
+</div>
 
     </main>
 
@@ -262,39 +175,35 @@
 
     <footer class="navegacao-inferior">
 
-    <a
-        href="https://www.instagram.com/aionmove/"
-        target="_blank"
-        rel="noopener noreferrer"
-    >
-        <i class="fa-brands fa-instagram"></i>
-        <span>INSTAGRAM</span>
-        <small>@aionmove</small>
-    </a>
+        <a
+            href="https://www.instagram.com/aionmove/"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <i class="fa-brands fa-instagram"></i>
+            <span>INSTAGRAM</span>
+            <small>@aionmove</small>
+        </a>
 
-    <a
-        href="https://api.whatsapp.com/send?phone=5548998608103&text=Ol%C3%A1%2C+gostaria+de+conhecer+mais+sobre+a+minha+jornada+de+transforma%C3%A7%C3%A3o."
-        target="_blank"
-        rel="noopener noreferrer"
-    >
-        <i class="fa-brands fa-whatsapp"></i>
-        <span>WHATSAPP</span>
-        <small>Fale com a gente</small>
-    </a>
 
-    <a href="#">
-        <i class="fa-regular fa-clipboard"></i>
-        <span>QUESTIONÁRIO</span>
-        <small>Conte pra gente</small>
-    </a>
+        <a
+            href="https://api.whatsapp.com/send?phone=5548998608103&text=Ol%C3%A1%2C+gostaria+de+conhecer+mais+sobre+a+minha+jornada+de+transforma%C3%A7%C3%A3o."
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>WHATSAPP</span>
+            <small>Fale com a gente</small>
+        </a>
 
-    <a href="#">
-        <i class="fa-solid fa-users"></i>
-        <span>COMUNIDADE</span>
-        <small>Acesse o grupo</small>
-    </a>
 
-</footer>
+        <a href="#">
+            <i class="fa-regular fa-clipboard"></i>
+            <span>QUESTIONÁRIO</span>
+            <small>Conte pra gente</small>
+        </a>
+
+    </footer>
 
 
     <!-- =========================
@@ -306,3 +215,4 @@
 </body>
 
 </html>
+```
