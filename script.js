@@ -132,17 +132,13 @@ const mensagensSignos = {
     virgem: [
         "Sua atenção aos detalhes pode revelar uma solução que ninguém mais percebeu. Confie nessa capacidade, mas não permita que ela se transforme em cobrança.",
         "Nem tudo precisa estar perfeito para começar. Algumas das melhores experiências nascem justamente enquanto aprendemos.",
-        "Você tem um talento especial para organizar aquilo que parece confuso. Use essa habilidade para criar tranquilidade, não para tentar controlar tudo.",
         "Seu cuidado com os outros é valioso, mas você também merece receber o mesmo cuidado que oferece.",
         "Uma pequena mudança na rotina pode trazer uma sensação inesperada de renovação. Experimente algo simples e diferente.",
-        "Sua mente pode estar procurando problemas antes mesmo que eles existam. Volte para o presente e observe aquilo que realmente está acontecendo.",
         "Existe beleza na simplicidade. Nem sempre é necessário acrescentar mais; às vezes, retirar excessos revela o que realmente importa.",
         "Sua dedicação pode estar construindo resultados que ainda não consegue enxergar. Continue, mas lembre-se de reconhecer seu próprio esforço.",
-        "Você não precisa corrigir tudo ao seu redor. Algumas coisas podem simplesmente existir sem precisar da sua intervenção.",
         "Uma decisão ficará mais clara quando você separar aquilo que é necessidade daquilo que é apenas preocupação.",
         "Sua inteligência prática é uma grande aliada. Confie naquilo que você já aprendeu através da experiência.",
         "Permita-se descansar sem sentir que está desperdiçando tempo. Até a terra precisa de períodos de repouso para voltar a florescer.",
-        "Um detalhe aparentemente insignificante pode carregar uma mensagem importante. Observe, mas sem transformar tudo em motivo para preocupação.",
         "Você está aprendendo que autocuidado também significa aceitar suas imperfeições. Não exija de si aquilo que jamais exigiria de alguém que ama.",
         "O universo convida você a trocar um pouco do controle pela confiança. Nem tudo precisa ser planejado para dar certo."
     ],
@@ -157,12 +153,10 @@ const mensagensSignos = {
         "Seu charme natural pode abrir portas, mas é sua autenticidade que fará as pessoas permanecerem.",
         "Existe uma decisão que talvez você esteja adiando para não decepcionar alguém. Lembre-se de que sua felicidade também merece consideração.",
         "O universo convida você a encontrar beleza no equilíbrio entre dar e receber.",
-        "Uma nova conexão pode surgir de maneira inesperada. Permita que ela se desenvolva sem tentar definir tudo imediatamente.",
         "Você não precisa resolver todos os conflitos ao seu redor. Algumas pessoas precisam encontrar suas próprias respostas.",
         "Seu senso de justiça pode estar pedindo uma atitude. Fale quando sentir que algo importante precisa ser colocado em equilíbrio.",
         "A paz verdadeira não nasce de evitar todos os conflitos, mas de saber quais batalhas merecem sua energia.",
         "Hoje, escolha aquilo que traz leveza sem ignorar aquilo que precisa ser enfrentado.",
-        "Quando você para de buscar aprovação, suas escolhas ficam mais próximas daquilo que realmente deseja."
     ],
 
     escorpiao: [
@@ -170,7 +164,6 @@ const mensagensSignos = {
         "Sua intuição pode perceber aquilo que as palavras não revelam. Observe os detalhes, os silêncios e aquilo que seu coração sente antes de tomar uma decisão.",
         "Nem todo mundo precisa conhecer tudo o que existe dentro de você. Preserve seu mistério, mas permita que pessoas verdadeiras atravessem suas barreiras.",
         "Alguns ciclos precisam terminar para que uma nova versão sua possa nascer. Não tenha medo de deixar para trás aquilo que já cumpriu seu propósito.",
-        "Você sente profundamente e dificilmente vive algo pela metade. Hoje, use essa profundidade para compreender seus sentimentos, e não para se prender a eles.",
         "Existe uma força silenciosa dentro de você que aparece justamente nos momentos mais difíceis. Confie na sua capacidade de se reconstruir quantas vezes forem necessárias.",
         "Sua paixão pode transformar sonhos em realidade quando encontra um propósito. Escolha com cuidado aquilo que merece toda a sua dedicação.",
         "Nem toda batalha precisa ser enfrentada. Às vezes, a verdadeira força está em saber quando recuar, observar e esperar o momento certo.",
@@ -178,7 +171,6 @@ const mensagensSignos = {
         "Você pode estar percebendo mudanças antes que elas se tornem visíveis. Confie na sua percepção, mas permita que o tempo confirme aquilo que sua intuição já suspeita.",
         "Existe poder em transformar uma ferida em aprendizado. O que um dia pareceu uma fraqueza pode se tornar justamente a fonte da sua maior força.",
         "Sua natureza intensa pode fazer você querer respostas imediatas. Hoje, experimente deixar algumas coisas acontecerem naturalmente. Nem todo mistério precisa ser desvendado agora.",
-        "Quando você se entrega a algo, sua determinação é difícil de ser interrompida. Direcione essa característica para construir, e não para alimentar preocupações que você não pode controlar.",
         "Um sentimento profundo pode estar pedindo sua atenção. Em vez de escondê-lo ou tentar controlá-lo, permita-se compreender o que ele está tentando revelar.",
         "O momento pede renascimento. Deixe morrer aquilo que já não representa quem você é e abra espaço para uma versão mais consciente, livre e verdadeira de si."
     ],
@@ -209,8 +201,6 @@ const mensagensSignos = {
         "Nem todo progresso é visível. Algumas das maiores mudanças acontecem silenciosamente, enquanto você continua fazendo sua parte.",
         "Sua ambição pode levar você longe quando está alinhada com aquilo que realmente deseja, e não apenas com aquilo que esperam de você.",
         "O universo lembra você de celebrar pequenas conquistas. Elas também fazem parte da montanha que você está subindo.",
-        "Não permita que a necessidade de controle faça você esquecer de aproveitar o caminho. A vida também acontece entre uma conquista e outra.",
-        "Sua maturidade pode ser uma fonte de segurança para quem está ao seu redor. Apenas não transforme isso na obrigação de resolver tudo.",
         "Uma oportunidade pode exigir paciência antes de mostrar seu verdadeiro potencial. Não abandone algo valioso apenas porque ainda está no começo.",
         "Você sabe construir lentamente aquilo que muitos desejam alcançar rapidamente. Confie no seu ritmo.",
         "Existe uma diferença entre responsabilidade e peso. Pergunte-se quais obrigações realmente pertencem a você.",
@@ -222,7 +212,6 @@ const mensagensSignos = {
     aquario: [
         "Uma ideia diferente pode ser exatamente aquilo que você precisava. Não descarte algo apenas porque ainda não faz sentido para os outros.",
         "Sua maneira única de enxergar o mundo é uma força. Preserve sua autenticidade mesmo quando ela fizer você seguir por um caminho diferente.",
-        "Você pode sentir necessidade de espaço para organizar seus pensamentos. Respeite esse momento sem se afastar completamente de quem importa.",
         "Uma conversa pode despertar uma ideia que muda seus próximos passos. Permita que novas perspectivas desafiem aquilo que você acreditava saber.",
         "O futuro começa nas pequenas escolhas do presente. Use sua criatividade para construir algo que represente realmente quem você é.",
         "Você não precisa seguir uma regra apenas porque todos seguem. Questione, compreenda e escolha conscientemente.",
@@ -231,9 +220,7 @@ const mensagensSignos = {
         "Sua mente busca liberdade, mas seu coração também precisa de vínculos. Encontre pessoas que respeitem seu espaço e valorizem sua presença.",
         "Nem toda mudança precisa ser explicada para os outros. Algumas decisões fazem sentido primeiro dentro de você.",
         "Seu olhar diferente pode ajudar alguém a enxergar uma saída onde só existia confusão.",
-        "O universo convida você a transformar inquietação em criação. Em vez de lutar contra a necessidade de mudança, descubra para onde ela quer levar você.",
         "Você pode estar pronto para abandonar uma ideia antiga sobre quem deveria ser. Dê espaço para uma versão mais autêntica de você.",
-        "Sua liberdade aumenta quando você deixa de precisar que todos entendam suas escolhas. Algumas verdades são suas para viver, não para justificar.",
         "Uma nova visão pode abrir um caminho completamente diferente. Confie na sua capacidade de imaginar aquilo que ainda não existe."
     ],
 
@@ -241,13 +228,9 @@ const mensagensSignos = {
         "Sua sensibilidade pode captar nuances que passam despercebidas para outras pessoas. Confie nessa percepção, mas proteja sua energia.",
         "Um sonho que parecia distante pode estar tentando mostrar uma direção. Preste atenção ao que desperta emoção e inspiração dentro de você.",
         "Nem tudo precisa ser explicado pela razão. Algumas respostas chegam através da intuição, dos sentimentos e daqueles pequenos sinais que aparecem pelo caminho.",
-        "Você tem uma imaginação capaz de transformar experiências em significado. Use essa criatividade para construir, não apenas para escapar da realidade.",
         "Sua empatia é um presente, mas você não precisa carregar as emoções de todos ao seu redor.",
-        "Existe beleza em permitir que as coisas aconteçam sem tentar controlar cada detalhe. Confie um pouco mais no fluxo da vida.",
-        "Uma lembrança pode despertar algo que você pensava ter deixado para trás. Em vez de fugir do sentimento, pergunte o que ele veio ensinar.",
         "Seu coração pode estar pedindo silêncio. Afaste-se por alguns instantes do excesso de estímulos e escute aquilo que existe dentro de você.",
         "Você não precisa transformar todos os seus sonhos em planos imediatamente. Alguns precisam primeiro existir como inspiração.",
-        "Uma conexão emocional pode surgir de maneira inesperada. Permita que ela cresça naturalmente, sem criar expectativas antes da hora.",
         "Sua delicadeza não é fraqueza. Existe muita coragem em continuar sentindo profundamente sem permitir que o mundo endureça seu coração.",
         "Talvez você esteja procurando respostas muito longe. Às vezes, aquilo que precisa ser compreendido já está sendo sentido dentro de você.",
         "O universo convida você a equilibrar sonho e realidade. Imagine novos caminhos, mas dê também pequenos passos para aproximá-los.",
