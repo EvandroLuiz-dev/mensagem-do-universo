@@ -36,6 +36,24 @@ body {
 
 }
 
+body {
+    opacity: 0;
+    transform: translateY(8px);
+    transition:
+        opacity 0.45s ease,
+        transform 0.45s ease;
+}
+
+body.pagina-visivel {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+body.pagina-saindo {
+    opacity: 0;
+    transform: translateY(-8px);
+}
+
 /* =========================
 
    FUNDO

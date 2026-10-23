@@ -21,11 +21,29 @@ body {
     font-family: 'Poppins', sans-serif;
     color: #ffffff;
 
-    overflow-x: hidden;
+    overflow: hidden;
 
     background: #21102f;
 
     overscroll-behavior-y: none;
+}
+
+body {
+    opacity: 0;
+    transform: translateY(8px);
+    transition:
+        opacity 0.45s ease,
+        transform 0.45s ease;
+}
+
+body.pagina-visivel {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+body.pagina-saindo {
+    opacity: 0;
+    transform: translateY(-8px);
 }
 
 
@@ -72,18 +90,23 @@ footer {
 
 header {
     width: 100%;
-
     height: 76px;
 
     padding: 10px 16px;
 
-    display: grid;
-
-    grid-template-columns: 48px 1fr 48px;
-
+    display: flex;
     align-items: center;
+    justify-content: center;
+
+    position: relative;
 }
 
+.botao-topo.inicio {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
 /* =========================
    BOTÕES DO TOPO
@@ -219,6 +242,10 @@ header {
     margin-top: 12px;
 }
 
+.divisor-convite {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
 .divisor span {
     width: 45px;
 
@@ -234,59 +261,22 @@ header {
 }
 
 
-/* =========================
-   SLIDER
-========================= */
-
-.slider-container {
-    width: 100%;
-
-    margin-top: 18px;
-
-    overflow: hidden;
-}
-
-.slider {
-    display: flex;
-
-    overflow-x: auto;
-
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-
-    -webkit-overflow-scrolling: touch;
-
-    scrollbar-width: none;
-}
-
-.slider::-webkit-scrollbar {
-    display: none;
-}
-
-
-html,
-body {
-    height: 100%;
-    overflow: hidden;
-}
 
 /* =========================
    CARDS
 ========================= */
 
 .card {
-    flex: 0 0 calc(100% - 80px);
+    width: calc(100% - 40px);
+    max-width: 360px;
 
-    margin: 0 40px;
-
-    scroll-snap-align: center;
-    scroll-snap-stop: always;
+    margin: 0 auto;
 
     position: relative;
     overflow: hidden;
 
     border-radius: 22px;
-
+    
     box-shadow: none;
 }
 
@@ -295,17 +285,17 @@ body {
 ========================= */
 
 .card-mensagem {
-    aspect-ratio: 1 / 0.92;
+    width: calc(100% - 40px);
+    max-width: 360px;
+
+    height: 230px;
+
+    margin: 0 auto;
 
     background-image: url("assets/backgrounds/backgroundResultado.png");
-
-    background-size: 100% 100%;
-
+    background-size: 112% 112%;
     background-position: center;
-
     background-repeat: no-repeat;
-
-    background-color: transparent;
 }
 
 
@@ -317,14 +307,12 @@ body {
     position: relative;
 
     width: 100%;
-    height: 100%;
+    height: 370px;
 
-    padding: 28px 28px 24px;
+    padding: 25px 25px 30px;
 
     display: flex;
-
     flex-direction: column;
-
     align-items: center;
 }
 
@@ -353,8 +341,8 @@ body {
 ========================= */
 
 #icone-signo {
-    width: 34px;
-    height: 34px;
+    width: 32px;
+    height: 32px;
     object-fit: contain;
 
     filter: brightness(0) saturate(100%)
@@ -378,7 +366,7 @@ body {
     line-height: 1;
 
     font-weight: 600;
-
+    margin:0;
     color: #3d214b;
 }
 
@@ -407,101 +395,30 @@ body {
 .mensagem-texto {
     width: 100%;
 
-    flex: 1;
-
     display: flex;
-
-    align-items: center;
-
     justify-content: center;
 
-    padding: 5px 30px;
-    margin-top: -15px;
+    padding: 0 25px;
+
+    margin-top: 8px;
+
     text-align: center;
 }
 
 .mensagem-texto p {
-    max-width: 270px;
+    max-width: 290px;
+
+    margin: 0;
 
     font-family: 'Cormorant Garamond', serif;
-
     font-size: 16px;
-
-    line-height: 1.55;
-
+    line-height: 1.45;
     font-weight: 500;
 
     color: #3d214b;
 }
 
 
-/* =========================
-   REFLEXÃO
-========================= */
-
-.reflexao {
-    width: 100%;
-
-    margin-top: auto;
-transform: translateY(-25px);
-    text-align: center;
-}
-
-.linha-reflexao {
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    gap: 7px;
-
-    margin-bottom: 5px;
-}
-
-.linha-reflexao span {
-    width: 38px;
-
-    height: 1px;
-
-    background: rgba(61, 33, 75, 0.42);
-}
-
-.linha-reflexao i {
-    font-size: 9px;
-
-    color: #9a604c;
-}
-
-.reflexao small {
-    display: block;
-
-    font-size: 7px;
-
-    font-weight: 600;
-
-    letter-spacing: 1.8px;
-
-    color: #684c6d;
-}
-
-.reflexao p {
-    max-width: 260px;
-
-    margin: 5px auto 0;
-
-    font-family: 'Cormorant Garamond', serif;
-
-    font-size: 13px;
-
-    line-height: 1.25;
-
-    font-weight: 500;
-
-    font-style: italic;
-
-    color: #3d214b;
-}
 
 
 /* =========================
@@ -628,152 +545,6 @@ transform: translateY(-25px);
 }
 
 
-/* =========================
-   INDICADOR DO SLIDER
-========================= */
-
-.indicador-slider {
-    margin-top: 3px;
-
-    display: flex;
-
-    flex-direction: column;
-
-    align-items: center;
-}
-
-
-
-.pontos {
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    gap: 4px;
-}
-
-.pontos {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 6px;
-}
-
-.ponto {
-    display: block;
-
-    width: 8px;
-    height: 8px;
-
-    border-radius: 50%;
-
-    background: rgba(61, 33, 75, 0.40);
-
-    transition:
-        width 0.3s ease,
-        background 0.3s ease;
-}
-
-.ponto.ativo {
-    width: 24px;
-    height: 8px;
-
-    border-radius: 10px;
-
-    background: #4a2757;
-}
-
-.indicador-arraste {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-
-    margin-top: 0px;
-
-    color: #4A2757;
-
-    font-family: 'Poppins', sans-serif;
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-}
-
-.seta-arraste {
-    font-size: 21px;
-    font-weight: 700;
-
-    animation: setaDeslizar 1.4s ease-in-out infinite;
-}
-
-@keyframes setaDeslizar {
-    0%, 100% {
-        transform: translateX(0);
-    }
-
-    50% {
-        transform: translateX(7px);
-    }
-}
-.indicador-slider p {
-    margin-top: 5px;
-
-    font-size: 8px;
-
-    letter-spacing: 1px;
-
-    color: rgba(61, 33, 75, 0.55);
-}
-
-
-/* =========================
-   BOTÃO OUTRA MENSAGEM
-========================= */
-
-.outra-mensagem {
-    width: calc(100% - 110px);
-
-    max-width: 300px;
-
-    margin: 12px auto 90px;
-
-    padding: 10px 15px;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    gap: 7px;
-
-    border: none;
-
-    border-radius: 25px;
-
-    background: #4a2757;
-
-    color: #ffffff;
-
-    font-family: 'Poppins', sans-serif;
-
-    font-size: 9px;
-
-    font-weight: 600;
-
-    letter-spacing: 1px;
-
-    cursor: pointer;
-
-    box-shadow:
-        0 4px 12px rgba(55, 25, 65, 0.14);
-}
-
-.outra-mensagem i {
-    font-size: 10px;
-}
 
 
 /* =========================
@@ -925,18 +696,6 @@ transform: translateY(-25px);
         margin-top: 12px;
     }
 
-    .card {
-    flex-basis: calc(100% - 50px);
-
-    margin-left: 25px;
-    margin-right: 25px;
-
-    aspect-ratio: 1 / 0.95;
-}
-
-    .conteudo-card {
-        padding: 22px 24px 20px;
-    }
 
     #icone-signo {
         width: 30px;
@@ -947,23 +706,11 @@ transform: translateY(-25px);
         font-size: 23px;
     }
 
-    .mensagem-texto {
-        padding: 0px 25px;
-        margin-top: -10px;
-    }
 
     .mensagem-texto p {
         font-size: 16px;
     }
 
-    .reflexao p {
-        font-size: 12px;
-    }
-
-    .outra-mensagem {
-        margin-top: 6px;
-        margin-bottom: 5px;
-    }
 
      .navegacao-inferior {
         padding: 7px 15px 9px;
@@ -1110,4 +857,31 @@ transform: translateY(-25px);
 
 .botao-comunidade:active {
     transform: scale(0.97);
+}
+
+.cabecalho-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#icone-signo {
+    width: 32px;
+    height: 32px;
+    margin: 0;
+}
+
+#nome-signo {
+    margin: 0;
+}
+
+.signo-titulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 8px;
 }
